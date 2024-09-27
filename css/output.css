@@ -1306,8 +1306,10 @@ video {
     line-height: 1.5rem;
   }
 }
-.changethis {
-    height: 100vh;
-    height: calc(var(--vh, 1vh) * 100); 
+@media only screen and (max-width: 768px) {
+  .changethis {
+      height: 100vh;
+      height: calc(var(--vh, 1vh) * 100); 
+  }
 }
 
