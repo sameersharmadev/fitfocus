@@ -679,6 +679,10 @@ video {
   height: auto;
 }
 
+.h-screen {
+  height: 100vh;
+}
+
 .w-1\/12 {
   width: 8.333333%;
 }
@@ -1118,6 +1122,10 @@ video {
     display: none;
   }
 
+  .md\:h-auto {
+    height: auto;
+  }
+
   .md\:w-1\/2 {
     width: 50%;
   }
@@ -1253,8 +1261,5 @@ video {
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
-}
-img {
-    pointer-events: none; 
 }
 
