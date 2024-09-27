@@ -1262,4 +1262,10 @@ video {
     line-height: 1.75rem;
   }
 }
+@media (max-width: 768px) { 
+    .changethis {
+        height: 100vh;
+        overflow: hidden;
+    }
+}
 
