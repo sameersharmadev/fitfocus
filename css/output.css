@@ -1262,4 +1262,9 @@ video {
     line-height: 1.75rem;
   }
 }
-
+@media (max-width: 768px) { 
+    #hero{
+        height: 100vh;
+        overflow: hidden;
+    }
+}
