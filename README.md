@@ -6,6 +6,7 @@ FitMeal is a web application designed to deliver customized diet plans directly 
 https://crimsonbeam.github.io/FitMeal
 </br>
 <h2>Features</h2>
+
 + User friendly interface
 + Responsivene and clean design
 + Free newsletter system
