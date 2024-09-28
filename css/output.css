@@ -1319,3 +1319,9 @@ body {
 img {
     pointer-events: none;
 }
+@media (min-width: 768px) { /* Medium screens and larger */
+  .joinbutton {
+      width: 20%; 
+      align-self: flex-end;
+  }
+}
