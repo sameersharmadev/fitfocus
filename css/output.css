@@ -1316,3 +1316,6 @@ video {
 body {
     font-family: 'Inter', 'DM Sans', sans-serif;
 }
+img {
+    pointer-events: none;
+}
