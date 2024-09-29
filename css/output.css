@@ -1324,4 +1324,13 @@ img {
       width: 20%; 
       align-self: flex-end;
   }
+  #step6{
+    padding-top:8%;
+    padding-bottom:8%;
+  }
+  #join{
+    margin-top: 10%;
+    margin-bottom: 5%;
+    width:70%;
+  }
 }

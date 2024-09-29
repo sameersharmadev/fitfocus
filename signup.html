@@ -12,27 +12,7 @@
 <body class="bg-gray-100">
     <form id="myForm">
     <div class="flex justify-center items-center md:h-screen container mx-auto my-auto p-4">
-        <div class="step active p-4 container flex flex-col md:flex-row gap-8 justify-center items-center mx-auto text-center md:px-28 md:gap-6 w-10/12 rounded-xl bg-white" id="step1">
-            <div class="image flex flex-row md:flex-col items-center">
-                <img src="./img/logo.png" alt="logo" class="w-20 md:w-32">
-                <h5 class="md:text-4xl text-3xl font-bold">Join Fitmeal Today</h5>
-            </div>
-            <div class="flex flex-col gap-6">
-                <h4 class="text-xl md:text-3xl font-semibold text-left">Get access to your custom plan right from your inbox</h4>
-                <div class="flex flex-col text-left gap-2">
-                    <label>Enter your Email*</label>
-                    <input class="px-2 required w-full h-10 border border-solid" type="email" placeholder="abc@example.com" autocomplete="email" required>
-                    <button type="button" class="next-step bg-accent-color text-white px-4 py-2 rounded hover:bg-accent-color-dark md:w-32 md:self-end">Next</button>
-                </div>
-                <code class="text-xs md:text-left">
-                    By signing up, you agree to receive your personalized diet plan from your inbox<br>You can unsubscribe anytime<br>*You also declare to agree to our 
-                    <a href="#" class="text-blue">terms and conditions</a>
-                </code>
-            </div>
-        </div>
-
-        <!-- Step 2 -->
-        <div class="step hidden container flex step active p-4 md:flex-row gap-8 justify-center items-center mx-auto text-center md:gap-6 w-10/12 rounded-md bg-white" id="step2">
+        <div class="step active container flex step active p-4 md:flex-row gap-8 justify-center items-center mx-auto text-center md:gap-6 w-10/12 rounded-md bg-white" id="step1">
             <div class="md:w-1/2 image hidden md:flex flex-row md:flex-col items-center">
                 <img src="./img/height.png" alt="person's lifestyle" class="md:w-9/12">
             </div>
@@ -70,7 +50,7 @@
         </div>
         
 
-        <div class="step hidden container flex step active p-4 md:flex-row gap-8 justify-center items-center mx-auto text-center md:gap-6 w-10/12 rounded-md bg-white" id="step3">
+        <div class="step hidden container flex step active p-4 md:flex-row gap-8 justify-center items-center mx-auto text-center md:gap-6 w-10/12 rounded-md bg-white" id="step2">
             <div class="md:w-1/2 image hidden md:flex flex-row md:flex-col items-center">
                 <img src="./img/lifestyle.png" alt="person's lifestyle" class="md:w-7/12">
             </div>
@@ -113,7 +93,7 @@
         
 
         <!-- Step 4 -->
-        <div class="step hidden container flex step active p-4 md:flex-row gap-8 justify-center items-center mx-auto text-center md:gap-6 w-10/12 rounded-md bg-white" id="step4">
+        <div class="step hidden container flex step active p-4 md:flex-row gap-8 justify-center items-center mx-auto text-center md:gap-6 w-10/12 rounded-md bg-white" id="step3">
             <div class="md:w-1/2 image hidden md:flex flex-row md:flex-col items-center">
                 <img src="./img/scale.png" alt="body measurements" class="md:w-10/12">
             </div>
@@ -123,7 +103,7 @@
                     <div class="flex flex-col gap-4">
                         <div>
                             <label for="body-fat"><code class="text-xs text-blue">Directly enter body fat percentage or calculate by entering neck and belly measurement below:</code></label>
-                            <input id="body-fat" class="px-2 w-full h-10 border border-solid" type="text" placeholder="Body Fat % (Autofills with neck and waist measurements)" readonly>
+                            <input id="body-fat" class="px-2 w-full h-10 border border-solid" type="text" placeholder="Body Fat % (Autofills with neck and waist measurements)" required>
                         </div>
                         <div>
                             <label for="neck">Enter your neck measurement (cm):</label>
@@ -133,7 +113,7 @@
                             <label for="belly">Enter your belly measurement <code>(from navel)</code>(cm):</label>
                             <input id="belly" class="px-2 w-full h-10 border border-solid" type="number" placeholder="Belly (cm)">
                         </div>
-                        <button type="button" class=" bg-blue text-white px-4 py-2 rounded md:w-32 md:self-end" onclick="calculateBodyFat()">Calculate</button>
+                        <button type="button" class=" bg-blue-600 text-white px-4 py-2 rounded md:w-32 md:self-end" onclick="calculateBodyFat()">Calculate</button>
                         
                     </div>
                 </div>
@@ -146,7 +126,7 @@
         
 
         <!-- Step 5 -->
-        <div class="step hidden container flex step active p-4 md:flex-row gap-8 justify-center items-center mx-auto text-center md:gap-6 w-10/12 rounded-md bg-white" id="step5">
+        <div class="step hidden container flex step active p-4 md:flex-row gap-8 justify-center items-center mx-auto text-center md:gap-6 w-10/12 rounded-md bg-white" id="step4">
             <div class="md:w-1/2 image hidden md:flex flex-row md:flex-col items-center">
                 <img src="./img/mirror.png" alt="self reflection" class="md:w-9/12">
             </div>
@@ -185,7 +165,7 @@
                 </div>
             </div>
         </div>
-        <div class="step hidden container flex step active p-4 md:flex-row gap-8 justify-center items-center mx-auto text-center md:gap-6 w-10/12 rounded-md bg-white" id="step6">
+        <div class="step hidden container flex step active p-4 md:flex-row gap-8 justify-center items-center mx-auto text-center md:gap-6 w-10/12 rounded-md bg-white" id="step5">
             <div class="md:w-1/2 image hidden md:flex flex-row md:flex-col items-center">
                 <img src="./img/preference.png" alt="person's lifestyle" class="md:w-8/12">
             </div>
@@ -200,8 +180,26 @@
                 </div>
                 <div class="flex justify-end gap-2 mt-4">
                     <button type="button" class="prev-step bg-basic text-black px-4 py-2 rounded md:w-32 md:self-end">Previous</button>
-                    <button type="button" class="submit bg-blue-600 hover:bg-blue-800 text-white px-4 py-2 rounded md:w-32 md:self-end">SUBMIT</button>
+                    <button type="button" class="next-step bg-accent-color hover:bg-accent-color-dark text-white px-4 py-2 rounded md:w-32 md:self-end">Next</button>
                 </div>
+            </div>
+        </div>
+        <div class="step hidden p-4 container flex flex-col md:flex-row gap-8 justify-center items-center mx-auto text-center md:px-28 md:gap-6 w-10/12 rounded-xl bg-white" id="step6">
+            <div class="image flex flex-row md:flex-col items-center">
+                <img src="./img/logo.png" alt="logo" class="w-20 md:w-32">
+                <h5 class="md:text-4xl text-3xl font-bold">Join Fitmeal Today</h5>
+            </div>
+            <div class="flex flex-col gap-6">
+                <h4 class="text-xl md:text-3xl font-semibold text-left">Get access to your custom plan right from your inbox</h4>
+                <div class="flex flex-col text-left gap-2">
+                    <label>Enter your Email*</label>
+                    <input class="px-2 required w-full h-10 border border-solid" type="email" placeholder="abc@example.com" autocomplete="email" required>
+                    <button type="submit" class="submit bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-800 md:w-32 md:self-end">SUBMIT</button>
+                </div>
+                <code class="text-xs md:text-left">
+                    By signing up, you agree to receive your personalized diet plan from your inbox<br>You can unsubscribe anytime<br>*You also declare to agree to our 
+                    <a href="#" class="text-blue">terms and conditions</a>
+                </code>
             </div>
         </div>
     </div>

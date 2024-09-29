@@ -24,7 +24,7 @@ document.querySelectorAll('.next-step').forEach(button => {
             currentStep = (currentStep + 1) % steps.length;
             steps[currentStep].classList.remove('hidden');
         } else {
-            alert('Please fill all required fields and make sure you entered data in integer format.(Dont worry your information is not stored)');
+            alert('Please fill all required fields highlighted in red and make sure you entered numerical data in integer format.(Dont worry your information is not stored)');
         }
     });
 });
@@ -49,17 +49,17 @@ function calculateBodyFat() {
         document.getElementById('body-fat').value = bodyFat + ' %';
     }
 }
-
-
-document.querySelector('.submit').addEventListener('click', function() {
-    if (validateCurrentStep()) {
-        document.getElementById('popup').classList.remove('hidden');
-    } else {
-        alert('Please fill all required fields.');
-    }
-});
-
-
+// Show the popup when the form is submitted
+document.getElementById('myForm').addEventListener('submit', function(event) {
+    event.preventDefault();  // Prevent form submission
+    document.getElementById('popup').classList.remove('hidden');  // Show the popup
+  });
+  
+  // Close the popup when the button is clicked
+  document.getElementById('closePopup').addEventListener('click', function() {
+    document.getElementById('popup').classList.add('hidden');  // Hide the popup
+  });
+  
 document.getElementById('closePopup').addEventListener('click', function() {
     window.location.href = './index.html';
 });
