@@ -4,7 +4,7 @@
 FitMeal is a web application designed to deliver customized diet plans directly to your inbox. It provides users with personalized, actionable nutrition advice through regular newsletters, helping them stay on track with their fitness and health goals.
 
 <h2>WebsiteUrl </h2>
-https://sameersharmadev.github.io/FitMeal/
+https://sameersharmadev.github.io/fitmeal/
 </br>
 
 <h2>Technologies Used</h2>
