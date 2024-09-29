@@ -19,5 +19,6 @@ https://sameersharmadev.github.io/FitMeal/
 + User friendly interface
 + Responsivene and clean design
 + Free newsletter system
++ Multi-step form to signup
 + Optional donation section
 
