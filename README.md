@@ -13,6 +13,7 @@ https://sameersharmadev.github.io/fitfocus/
 + CSS
 + Javascript
 + TailwindCSS
++ SCSS
 
 <h2>Features</h2>
 
