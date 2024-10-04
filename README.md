@@ -1,10 +1,10 @@
 
 <h1>Description</h2>
 <img src="./img/image.png" alt="Image">
-FitMeal is a web application designed to deliver customized diet plans directly to your inbox. It provides users with personalized, actionable nutrition advice through regular newsletters, helping them stay on track with their fitness and health goals.
+FitFocus is a web application designed to deliver customized diet plans directly to your inbox. It provides users with personalized, actionable nutrition advice through regular newsletters, helping them stay on track with their fitness and health goals.
 
 <h2>WebsiteUrl </h2>
-https://sameersharmadev.github.io/fitmeal/
+https://sameersharmadev.github.io/fitfocus/
 </br>
 
 <h2>Technologies Used</h2>
