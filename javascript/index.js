@@ -37,12 +37,15 @@ function toggleFAQ(event) {
 const menuToggle = document.getElementById('menu-toggle');
     const fullScreenMenu = document.getElementById('full-screen-menu');
     const menuClose = document.getElementById('menu-close');
-
+   const links = document.getElementsByClassName('links');
     menuToggle.addEventListener('click', () => {
         fullScreenMenu.classList.remove('hidden');
         document.body.style.overflow = 'hidden';
     });
-
+    links.addEventListener('click', () => {
+        fullScreenMenu.classList.remove('hidden');
+        document.body.style.overflow = 'hidden';
+    });
     menuClose.addEventListener('click', () => {
         fullScreenMenu.classList.add('hidden');
         document.body.style.overflow = 'auto';
