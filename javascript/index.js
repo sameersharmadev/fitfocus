@@ -34,6 +34,7 @@ function toggleFAQ(event) {
     const icon = event.currentTarget.querySelector("svg");
     icon.classList.toggle("rotate-180");
 }
+const links = document.querySelectorAll('.links');
 const menuToggle = document.getElementById('menu-toggle');
     const fullScreenMenu = document.getElementById('full-screen-menu');
     const menuClose = document.getElementById('menu-close');
