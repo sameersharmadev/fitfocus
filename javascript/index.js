@@ -42,9 +42,10 @@ const menuToggle = document.getElementById('menu-toggle');
         fullScreenMenu.classList.remove('hidden');
         document.body.style.overflow = 'hidden';
     });
-    links.addEventListener('click', () => {
-        fullScreenMenu.classList.add('hidden');
-        document.body.style.overflow = 'hidden';
+    links.forEach(link => {
+        link.addEventListener('click', function () {
+            mobileMenu.classList.add('hidden');
+        });
     });
     menuClose.addEventListener('click', () => {
         fullScreenMenu.classList.add('hidden');
