@@ -45,7 +45,7 @@ const menuToggle = document.getElementById('menu-toggle');
     });
     links.forEach(link => {
         link.addEventListener('click', function () {
-            mobileMenu.classList.add('hidden');
+            fullScreenMenu.classList.add('hidden');
         });
     });
     menuClose.addEventListener('click', () => {
