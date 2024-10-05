@@ -43,7 +43,7 @@ const menuToggle = document.getElementById('menu-toggle');
         document.body.style.overflow = 'hidden';
     });
     links.addEventListener('click', () => {
-        fullScreenMenu.classList.remove('hidden');
+        fullScreenMenu.classList.add('hidden');
         document.body.style.overflow = 'hidden';
     });
     menuClose.addEventListener('click', () => {
