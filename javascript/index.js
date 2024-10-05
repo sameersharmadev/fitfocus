@@ -28,4 +28,23 @@ function setVh() {
 window.addEventListener('resize', setVh);
 window.addEventListener('load', setVh);
 setVh();
+function toggleFAQ(event) {
+    const answer = event.currentTarget.nextElementSibling;
+    answer.classList.toggle("hidden");
+    const icon = event.currentTarget.querySelector("svg");
+    icon.classList.toggle("rotate-180");
+}
+const menuToggle = document.getElementById('menu-toggle');
+    const fullScreenMenu = document.getElementById('full-screen-menu');
+    const menuClose = document.getElementById('menu-close');
+
+    menuToggle.addEventListener('click', () => {
+        fullScreenMenu.classList.remove('hidden');
+        document.body.style.overflow = 'hidden';
+    });
+
+    menuClose.addEventListener('click', () => {
+        fullScreenMenu.classList.add('hidden');
+        document.body.style.overflow = 'auto';
+    });
     

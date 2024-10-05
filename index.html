@@ -5,24 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FitFocus</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
     <link href="./css/output.css" rel="stylesheet">
     <link rel="icon" href="./img/logo.png">
 </head>
-<body class="overflow-x-hidden fade-in bg-gray-100">
-    <nav class="md:flex md:flex-row mx-auto justify-between container relative">
-        <div class="md:flex hidden text-4xl px-8 font-semibold py-3">
-            <img src="./img/logo.png" class="h-9">
-            <p>FitFocus</p>
+<body class="overflow-x-hidden fade-in">
+    <nav class="relative container mx-auto">
+        <div class="md:flex flex-row hidden justify-between items-center">
+            <div class=" flex flex-row text-4xl px-8 font-semibold py-3">
+                <img src="./img/logo.png" class="h-9">
+                <p>FitFocus</p>
+            </div>
+            <div class="flex md:flex-row-reverse md:gap-x-8 md:text-xl items-center">
+                <a href="./signup.html" id="plan" class="rounded-md bg-accent-color hover:bg-accent-color-dark px-3 py-0.4 md:py-1 text-white focus:ring">Get Your Plan</a>
+                <a href="#contact" class="hover:text-accent-color">Contact</a>
+                <a href="#faq" class="hover:text-accent-color">FAQs</a>
+                <a href="#features" class="hover:text-accent-color">Features</a>
+            </div>
         </div>
-        <div class="flex flex-row-reverse m-3 mx-4 items-center justify-between md:justify-start md:gap-x-8 md:text-xl ">
-            <a href="./signup.html" id="plan" class="rounded-md bg-accent-color hover:bg-accent-color-dark px-3 py-0.4 md:py-1 text-white focus:ring" >Get Your Plan</a>
-            <a href="#features" class="hover:text-accent-color">Features</a>
-            <a href="#hero" class="hover:text-accent-color">About</a>
-            <a href="#contact" class="hover:text-accent-color">Contact</a>
+        
+        <div class="flex md:hidden items-center justify-end mx-6 mt-4">
+            <button id="menu-toggle" class="text-3xl p-1 focus:outline-none">
+                &#9776;
+            </button>
+        </div>
+        
+        <div id="full-screen-menu" class="fixed top-0 left-0 w-full h-full bg-white bg-opacity-90 z-50 hidden flex flex-col-reverse items-center justify-center">
+            <button id="menu-close" class="absolute top-4 right-4 text-4xl focus:outline-none">&times;</button>
+            
+            <a href="./signup.html" id="plan" class="hover:text-accent-color text-xl mb-4 text-left">Get Your Plan</a>
+            <a href="#features" class="hover:text-accent-color text-xl mb-4 text-left">Features</a>
+            <a href="#contact" class="hover:text-accent-color text-xl mb-4 text-left">Contact</a>
+            <a href="#faq" class="hover:text-accent-color text-xl mb-4">FAQs</a>
+            <a class="text-3xl mb-10 text-left">Menu</a>
         </div>
     </nav>
+    
     <section class="container mx-auto " id="hero">
-        <div class="px-8 container flex flex-col gap-8 justify-center items-center md:flex-row mx-auto md:mt-36 md:mx-auto text-center w-full md:text-left md:gap-6 md:justify-center md:items-center my-16" id="hero1">
+        <div class="px-8 container flex flex-col gap-8 justify-center items-center md:flex-row mx-auto md:mx-auto text-center w-full md:text-left md:gap-6 md:justify-center md:items-center my-12 md:my-16" id="hero1">
             <div class="flex flex-col gap-5 md:w-1/2">
                 <div class="flex flex-row justify-center items-center">
                     <img src="./img/logo.png" class="rotate-25 h-12 w-auto md:hidden">
@@ -53,43 +73,92 @@
 
     <!--Features-->
     <section id="features" class="container w-full mx-auto">
-        <div class="px-8 flex flex-col md:flex-row justify-center gap-8 mb-28 text-center w-full md:text-left md:pt-20">
+        <div class="px-8 flex flex-col md:flex-row justify-center gap-8 text-center w-full md:text-left md:pt-20">
             <div class="flex flex-col gap-8 md:w-1/2">
-                <h2 class="text-3xl md:text-5xl font-bold">What's so special about FitFocus?</h2>
-                <p class="md:px-0 md:max-w-md md:text-lg">FitFocus provides an easy-to-use yet feature-packed customized nutrition plan according to your requirements.</p>
+                <h2 class="text-3xl md:text-5xl font-bold">Why FitFocus?</h2>
+                <p class="md:px-0 md:max-w-md md:text-lg hidden md:block">FitFocus provides an easy-to-use yet feature-packed customized nutrition plan according to your requirements.</p>
             </div>
-            <div class="flex flex-col justify-center md:justify-end md:max-w-full">
+            <div class="flex flex-col justify-center md:justify-end md:max-w-full text-left">
                 <div>
-                    <div class="flex flex-row justify-center md:justify-start gap-2 items-center">
+                    <div class="flex flex-row justify-start md:justify-start gap-2 items-center">
                         <div>
                             <a class="rounded-md bg-accent-color hover:bg-accent-color-dark px-2 py-1 text-white focus:ring">1</a>
                         </div>
-                        <h3 class="text-xl md:text-3xl font-bold">Personal Meal Plans</h3>
+                        <h3 class="text-xl md:text-3xl font-bold">Personalized Meal Plans</h3>
                     </div>
-                    <p class="md:px-0 md:max-w-md md:text-lg pt-3">Receive custom meal plans based on your dietary preferences, fitness goals, and nutritional needs.</p>
+                    <p class="md:px-0 md:max-w-md md:text-lg md:pt-3 ">Receive custom meal plans based on your dietary preferences, fitness goals, and nutritional needs.</p>
+                </div>
+                <div>
+                    <div class="flex flex-row justify-start md:justify-start gap-2 items-center pt-3">
+                        <div>
+                            <a class="rounded-md bg-accent-color hover:bg-accent-color-dark px-2 py-1 text-white focus:ring">2</a>
+                        </div>
+                        <h3 class="text-xl md:text-3xl font-bold">Smart Grocery Lists</h3>
+                    </div>
+                    <p class="md:px-0 md:max-w-md md:text-lg md:pt-3">Automatically generate grocery lists based on your meal plan, making shopping easy and efficient.</p>
+                </div>
+                <div>
+                    <div class="flex flex-row justify-start md:justify-start gap-2 items-center pt-3">
+                        <div>
+                            <a class="rounded-md bg-accent-color hover:bg-accent-color-dark px-2 py-1 text-white focus:ring">3</a>
+                        </div>
+                        <h3 class="text-xl md:text-3xl font-bold">Nutrition Tracking</h3>
+                    </div>
+                    <p class="md:px-0 md:max-w-md md:text-lg md:pt-3">Our meal plans are verified by a team of nutritionists that ensure your calories are tracked.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="example" class="container w-full mx-auto py-20">
+        <div class="px-8 flex flex-col-reverse md:flex-row justify-center gap-6 text-left w-full md:text-left md:pt-20">
+            <div class="flex flex-col justify-centermd:justify-end md:w-1/2">
+                <p class="text-3xl md:text-5xl font-bold pb-6 md:pb-10">How it works?</p>
+                <div class=" flex flex-col gap-6">
+                <div>
+                    <div class="flex flex-row justify-start md:justify-start gap-2 items-center">
+                        <div>
+                            <a class="rounded-md bg-accent-color hover:bg-accent-color-dark px-2 py-1 text-white focus:ring">1</a>
+                        </div>
+                        <p class=" md:text-lg">Register yourself by filling the signup form</p>
+                    </div>
+                    
                 </div>
                 <div>
                     <div class="flex flex-row justify-center md:justify-start gap-2 items-center">
                         <div>
                             <a class="rounded-md bg-accent-color hover:bg-accent-color-dark px-2 py-1 text-white focus:ring">2</a>
                         </div>
-                        <h3 class="text-xl md:text-3xl font-bold">Smart Grocery Lists</h3>
+                        <p class=" md:text-lg">Your preferences are shared with a team of nutritionalists</p>
                     </div>
-                    <p class="md:px-0 md:max-w-md md:text-lg pt-3">Automatically generate grocery lists based on your meal plan, making shopping easy and efficient.</p>
                 </div>
                 <div>
                     <div class="flex flex-row justify-center md:justify-start gap-2 items-center">
                         <div>
                             <a class="rounded-md bg-accent-color hover:bg-accent-color-dark px-2 py-1 text-white focus:ring">3</a>
                         </div>
-                        <h3 class="text-xl md:text-3xl font-bold">Nutrition Tracking</h3>
+                        <p class=" md:text-lg">A custom weekly meal plan is prepared just for you, and shared on every Sunday 11:00AM </p>
                     </div>
-                    <p class="md:px-0 md:max-w-md md:text-lg pt-3">Our meal plans are verified by a team of nutritionists that ensure your calories are tracked.</p>
+                </div>
+                <div>
+                    <div class="flex flex-row justify-center md:justify-start gap-2 items-center">
+                        <div>
+                            <a class="rounded-md bg-accent-color hover:bg-accent-color-dark px-2 py-1 text-white focus:ring">4</a>
+                        </div>
+                        <p class=" md:text-lg">You can always unsubscribe by replying “NO” to our emails, but we’ll never give you a reason to.. </p>
+                    </div>
                 </div>
             </div>
+            </div>
+            <div class="flex flex-col gap-8 justify-end items-center">
+                <img src="./img/examples.png" class="w-11/12 md:w-full">
+            </div>
+           
         </div>
     </section>
     
+    
+      
+
     <div class="w-full" id="customers">
         <div class="text-center block w-full px-8">
             <p class="block text-6xl md:text-8xl font-bold text-accent-color-dark w-full"> 100,000+</p>
@@ -107,16 +176,16 @@
                 <img src="./img/logo.png" alt="Icon" class="">
             </div>
 
-            <div class="flex flex-col gap-6 justify-center">
+            <div class="flex flex-col justify-center">
                 <h2 class="text-3xl md:text-left font-semibold">Get access to custom meal plans right from your inbox</h2>
                 <p class="text-gray-600 mb-2 md:text-left">By joining us you will become a part of an ever growing community of 100,00 people..<br>You will recieve your customized meal plan right from the inbox, and don't worry, it will always be free of charge...</p>
-                <a href="./signup.html" id="plan" class="joinbutton rounded-md bg-accent-color hover:bg-accent-color-dark px-2 py-1 md:py-1 text-white focus:ring" >Get Your Plan</a>
+                <a href="./signup.html" id="plan" class="joinbutton rounded-md bg-accent-color hover:bg-accent-color-dark px-2 py-1 md:py-1 text-white focus:ring md:mr-10" >Get Your Plan</a>
             </div>
         </div>
     </div>
     <div class="flex flex-col md:flex-row container mx-auto mb-16">
         <div class="w-4/5 mx-auto md:ml-auto md:mr-0 md:w-2/5">
-            <h4 class="text-3xl font-bold text-center md:text-left">See What Our Clients Say...</h2>
+            <h4 class="text-3xl font-bold text-center md:text-left">Success Stories...</h2>
             <div class="relative mt-5">
                 <div class="carousel text-black">
                     <div class="carousel-item active">
@@ -143,7 +212,7 @@
                     </div>
                 </div>
         
-                <!-- Carousel Controls -->
+
                 <button id="prev" class=" absolute left-0 top-1/2 transform -translate-y-1/2 transform-translate-x-1/2 text-black p-2 rounded-full">❮</button>
                 <button id="next" class=" absolute right-0 top-1/2 transform -translate-y-1/2 text-black p-2 rounded-full">❯</button>
             </div>
@@ -170,9 +239,154 @@
             
         </div>
     </div>
+    <section class="py-16 lg:flex px-8 flex flex-col md:flex-row justify-center gap-6 text-left w-full md:text-left md:pt-20 lg:items-start lg:justify-between mr-8" id="faq">
+        <div class="lg:w-2/5 flex justify-end">
+            <img src="./img/faqs.png" alt="FAQ Image" class="hidden lg:block w-7/12 lg:mt-10" />
+            <img src="./img/faqmobile.png" alt="FAQ Image Mobile" class="block lg:hidden w-full h-auto" />
+        </div>
+        <div class="lg:w-1/2 lg:pr-8">
+            <h2 class="text-3xl md:text-5xl text-center md:text-left font-bold mb-6">Frequent Questions</h2>
+            <div class="space-y-4 md:mr-20">
+                <div class="border rounded-lg">
+                    <button class="flex justify-between items-center w-full p-4 text-left text-gray-800 font-semibold focus:outline-none" onclick="toggleFAQ(event)">
+                        <span>Will it always be free?</span>
+                        <svg class="w-4 h-4 transform rotate-0 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12H9m6 0l-3-3m3 3l-3 3"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-answer hidden p-4 text-gray-700">
+                        <p>Yes, Fit Focus will always be free since our goal is to make this service accessible to everyone</p>
+                    </div>
+                </div>
+                <div class="border rounded-lg">
+                    <button class="flex justify-between items-center w-full p-4 text-left text-gray-800 font-semibold focus:outline-none" onclick="toggleFAQ(event)">
+                        <span>Can I customize my meal plan?</span>
+                        <svg class="w-4 h-4 transform rotate-0 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12H9m6 0l-3-3m3 3l-3 3"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-answer hidden p-4 text-gray-700">
+                        <p>Absolutely! You can let us know your dietary restrictions, allergies, and preferences (e.g., vegan, gluten-free), and we’ll adjust the meal plans to suit your needs.
+
+                        </p>
+                    </div>
+                </div>
+                <div class="border rounded-lg">
+                    <button class="flex justify-between items-center w-full p-4 text-left text-gray-800 font-semibold focus:outline-none" onclick="toggleFAQ(event)">
+                        <span>Can I cancel my subscription?</span>
+                        <svg class="w-4 h-4 transform rotate-0 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12H9m6 0l-3-3m3 3l-3 3"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-answer hidden p-4 text-gray-700">
+                        <p>Yes, you can cancel your subscription at any time by replying "NO" to any of our mails.</p>
+                    </div>
+                </div>
+                <div class="border rounded-lg">
+                    <button class="flex justify-between items-center w-full p-4 text-left text-gray-800 font-semibold focus:outline-none" onclick="toggleFAQ(event)">
+                        <span>Do you provide grocery lists?</span>
+                        <svg class="w-4 h-4 transform rotate-0 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12H9m6 0l-3-3m3 3l-3 3"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-answer hidden p-4 text-gray-700">
+                        <p>Yes, each meal plan comes with a complete grocery list for the week, making shopping quick and easy. The ingredients are organized by category to save you time at the store.</p>
+                    </div>
+                </div>
+                <div class="border rounded-lg">
+                    <button class="flex justify-between items-center w-full p-4 text-left text-gray-800 font-semibold focus:outline-none" onclick="toggleFAQ(event)">
+                        <span>What if I don’t like a certain recipe?</span>
+                        <svg class="w-4 h-4 transform rotate-0 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12H9m6 0l-3-3m3 3l-3 3"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-answer hidden p-4 text-gray-700">
+                        <p>No problem! You can swap out any recipe you don’t like by choosing from a list of alternatives we provide in the meal plan email.</p>
+                    </div>
+                </div>
+                <div class="border rounded-lg">
+                    <button class="flex justify-between items-center w-full p-4 text-left text-gray-800 font-semibold focus:outline-none" onclick="toggleFAQ(event)">
+                        <span>How do I contact FitFocus if I have other questions?</span>
+                        <svg class="w-4 h-4 transform rotate-0 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12H9m6 0l-3-3m3 3l-3 3"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-answer hidden p-4 text-gray-700">
+                        <p>Feel free to reach out to us via our contact page or email</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <div class="container mx-auto py-8 mb-28">
+        <h2 class="text-3xl md:text-5xl font-bold text-center mb-10">Our Partners</h2>
+        <div class="grid grid-cols-3 md:grid-cols-5 gap-4 px-10">
+          <div class="flex flex-col items-center">
+            <div class="h-16 w-16 overflow-hidden rounded-full mb-2">
+              <img src="./img/partner1.png" alt="Partner 1" class="h-full w-full object-cover">
+            </div>
+            <p class="text-center">Dr. Health</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <div class="h-16 w-16 overflow-hidden rounded-full mb-2">
+              <img src="./img/partner2.png" alt="Partner 2" class="h-full w-full object-cover">
+            </div>
+            <p class="text-center">FitFusion</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <div class="h-16 w-16 overflow-hidden rounded-full mb-2">
+              <img src="./img/partner3.png" alt="Partner 3" class="h-full w-full object-cover">
+            </div>
+            <p class="text-center">HealthNest</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <div class="h-16 w-16 overflow-hidden rounded-full mb-2">
+              <img src="./img/partner4.png" alt="Partner 4" class="h-full w-full object-cover">
+            </div>
+            <p class="text-center">FeulHub</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <div class="h-16 w-16 overflow-hidden rounded-full mb-2">
+              <img src="./img/partner5.png" alt="Partner 5" class="h-full w-full object-cover">
+            </div>
+            <p class="text-center">BalanceBites</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <div class="h-16 w-16 overflow-hidden rounded-full mb-2">
+              <img src="./img/partner6.png" alt="Partner 6" class="h-full w-full object-cover">
+            </div>
+            <p class="text-center font">EnergizeNow</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <div class="h-16 w-16 overflow-hidden rounded-full mb-2">
+              <img src="./img/partner7.png" alt="Partner 7" class="h-full w-full object-cover">
+            </div>
+            <p class="text-center">VitalityHub</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <div class="h-16 w-16 overflow-hidden rounded-full mb-2">
+              <img src="./img/partner8.png" alt="Partner 8" class="h-full w-full object-cover">
+            </div>
+            <p class="text-center">StrongSpehere</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <div class="h-16 w-16 overflow-hidden mb-2">
+              <img src="./img/partner9.png" alt="Partner 9" class="h-full w-full object-cover">
+            </div>
+            <p class="text-center">Nutrisync</p>
+          </div>
+          <div class="flex flex-col items-center hidden md:flex">
+            <div class="h-16 w-16 overflow-hidden mb-2">
+              <img src="./img/partner10.png" alt="Partner 10" class="h-full w-full object-cover">
+            </div>
+            <p class="text-center">PeakNutrition</p>
+          </div>
+        </div>
+      </div>
     <section class="container w-full mx-auto" id="contact"></section>
         <div class="px-8 container flex flex-col gap-8 justify-center md:flex-row mt-16 mx-auto md:mt-36 md:mx-auto text-center md:text-left md:gap-6 md:justify-center">
-            <div class="flex flex-col mx-auto px-10 gap-8 md:w-1/2 justify-center">
+            <div class="flex flex-col mx-auto px-8 gap-8 md:w-1/2 justify-center">
                 <h1 class="text-4xl md:text-6xl font-bold">
                     Contact Us
                 </h1>
@@ -187,19 +401,19 @@
                 </div> 
             </div>
             <div class="flex justify-center md:justify-center">
-                <img src="./img/contact1.png " class="w-4/5 h-auto">
+                <img src="./img/contact.png " class="w-4/5 h-auto">
             </div>
         </div>
     </section>
     <footer>
         <div class="bg-accent-color h-52 w-full justify-center text-white items-center text-center space-y-10">
             <div class="socialmedia flex flex-row gap-3 justify-center pt-10">
-                <img src="img/whatsapp.png" class="w-6 md:w-10">
-                <img src="img/facebook.png" class="w-6 md:w-10">
-                <img src="img/instagram.png" class="w-6 md:w-10">
+                <a href="https://www.whatsapp.com/" target="_blank"><img src="img/whatsapp.png" class="w-6 md:w-10"></a>
+                <a href="https://www.facebook.com/" target="_blank"><img src="img/facebook.png" class="w-6 md:w-10"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="img/instagram.png" class="w-6 md:w-10"></a>
                 
             </div>
-            <p class="">© FitFocuss 2024<br>All Rights Reserved</p>
+            <p class="">© FitFocus 2024<br>All Rights Reserved</p>
         </div>
     </footer>
 <script src="./javascript/index.js"></script>
