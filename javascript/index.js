@@ -38,14 +38,13 @@ const links = document.querySelectorAll('.links');
 const menuToggle = document.getElementById('menu-toggle');
     const fullScreenMenu = document.getElementById('full-screen-menu');
     const menuClose = document.getElementById('menu-close');
-   const links = document.getElementsByClassName('links');
     menuToggle.addEventListener('click', () => {
         fullScreenMenu.classList.remove('hidden');
         document.body.style.overflow = 'hidden';
     });
     links.forEach(link => {
         link.addEventListener('click', function () {
-            fullScreenMenu.classList.add('hidden');
+            fullScreenMenu.classList.add('auto');
         });
     });
     menuClose.addEventListener('click', () => {
