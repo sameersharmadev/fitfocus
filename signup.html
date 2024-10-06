@@ -12,7 +12,14 @@
 </head>
 <body class="bg-gray-100 overflow-x-hidden fade-in">
     <form id="myForm">
-    <div class="flex -mt-16 md:-mt-0 justify-center h-screen items-center md:h-screen container mx-auto my-auto p-4">
+        
+        <div class="w-full bg-gray-300 h-2 rounded mb-4">
+            <div id="progressBar" class="bg-accent-color h-full rounded" style="width: 0%;">
+        </div>
+        <a href="index.html" class="back-arrow">
+            <i class="fas fa-times"></i>
+        </a>
+    <div class="flex justify-center h-screen items-center md:h-screen container mx-auto my-auto p-4">
         
         <div class="step active container flex step active p-4 md:flex-row gap-8 justify-center items-center mx-auto text-center md:gap-6 w-10/12 rounded-md bg-white" id="step1">
             <div class="md:w-1/2 image hidden md:flex flex-row md:flex-col items-center">
@@ -270,6 +277,6 @@
         </div>
     </div>
     
-    <script src="javascript/signup.js"></script>
+<script src="javascript/signup.js"></script>
 </body>
 </html>

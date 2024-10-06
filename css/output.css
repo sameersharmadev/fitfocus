@@ -1562,3 +1562,17 @@ li{
 .contactlink {
   pointer-events: auto;
 }
+#progressBar {
+  transition: width 0.3s ease;
+}
+.back-arrow {
+  position: absolute;
+  top: 20px; 
+  right: 20px; 
+  font-size: 24px; 
+  color: #333; 
+}
+
+.back-arrow:hover {
+  color: #16a1e1; 
+}

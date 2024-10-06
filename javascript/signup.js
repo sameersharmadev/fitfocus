@@ -22,22 +22,20 @@ document.querySelectorAll('.next-step').forEach(button => {
         if (validateCurrentStep()) {
             steps[currentStep].classList.add('hidden');
             currentStep = (currentStep + 1) % steps.length;
-            steps[currentStep].classList.remove('hidden');
+            showStep(currentStep);
         } else {
-            alert('Please fill all required fields highlighted in red and make sure you entered numerical data in integer format.(Dont worry your information is not stored)');
+            alert('Please fill all required fields highlighted in red and make sure you entered numerical data in integer format. (Don\'t worry your information is not stored)');
         }
     });
 });
-
 
 document.querySelectorAll('.prev-step').forEach(button => {
     button.addEventListener('click', () => {
         steps[currentStep].classList.add('hidden');
         currentStep = (currentStep - 1 + steps.length) % steps.length;
-        steps[currentStep].classList.remove('hidden');
+        showStep(currentStep);
     });
 });
-
 
 function calculateBodyFat() {
     const neck = parseFloat(document.getElementById('neck').value);
@@ -49,36 +47,39 @@ function calculateBodyFat() {
         document.getElementById('body-fat').value = bodyFat + ' %';
     }
 }
-// Show the popup when the form is submitted
+
 document.getElementById('myForm').addEventListener('submit', function(event) {
-    event.preventDefault();  // Prevent form submission
-    document.getElementById('popup').classList.remove('hidden');  // Show the popup
-  });
-  
-  // Close the popup when the button is clicked
-  document.getElementById('closePopup').addEventListener('click', function() {
-    document.getElementById('popup').classList.add('hidden');  // Hide the popup
-  });
-  
+    event.preventDefault();
+    calculateBodyFat();
+    document.getElementById('popup').classList.remove('hidden');  
+});
+
 document.getElementById('closePopup').addEventListener('click', function() {
+    document.getElementById('popup').classList.add('hidden'); 
     window.location.href = './index.html';
 });
-let isFormCompleted = false;
 
 
-    document.getElementById('myForm').addEventListener('submit', function() {
-        isFormCompleted = true; 
+
+const form = document.querySelector('form');
+const inputs = form.querySelectorAll('input, textarea'); 
+
+inputs.forEach(input => {
+    input.addEventListener('input', () => {
+        isFormCompleted = Array.from(inputs).some(input => input.value.trim() !== '');
     });
+});
 
-    window.addEventListener('beforeunload', function(event) {
-        if (!isFormCompleted) {
 
-            const message = "You have unsaved changes. Are you sure you want to leave?";
-            event.returnValue = message; //
-            return message; 
-        }
-    });
-    const links = document.querySelectorAll('.links');
+window.addEventListener('beforeunload', function(event) {
+    if (isFormCompleted) {
+        const message = "You have unsaved changes. Are you sure you want to leave?";
+        event.returnValue = message; 
+        return message; 
+    }
+});
+
+const links = document.querySelectorAll('.links');
 const menuToggle = document.getElementById('menu-toggle');
 const fullScreenMenu = document.getElementById('full-screen-menu');
 const menuClose = document.getElementById('menu-close');
@@ -106,28 +107,32 @@ menuClose.addEventListener('click', () => {
     document.body.style.overflow = 'auto';
 });
 
-    
-    document.querySelector('.contactlink').addEventListener('click', function(event) {
-        event.preventDefault();
-        document.getElementById('contactModal').style.display = 'flex';
-        console.log("clicked");
-    });
-    document.querySelector('.contactlink').addEventListener('touchstart', function(event) {
-        event.preventDefault();
-        document.getElementById('contactModal').style.display = 'flex';
-        console.log("clicked")
-    });
-    document.querySelector('.close').addEventListener('click', function() {
-        document.getElementById('contactModal').style.display = 'none';
-    });
-    
-    window.addEventListener('click', function(event) {
-        if (event.target == document.getElementById('contactModal')) {
-            document.getElementById('contactModal').style.display = 'none';
-        }
-    });   
+document.querySelector('.close').addEventListener('click', function() {
+    document.getElementById('contactModal').style.display = 'none';
+});
 
-    document.querySelector('.tohome').addEventListener('click', function() {
-        window.location.href = './index.html';
+window.addEventListener('click', function(event) {
+    if (event.target == document.getElementById('contactModal')) {
+        document.getElementById('contactModal').style.display = 'none';
+    }
+});   
+
+document.querySelector('.tohome').addEventListener('click', function() {
+    window.location.href = './index.html';
+});
+
+function showStep(step) {
+    steps.forEach((s, index) => {
+        s.classList.toggle('hidden', index !== step);
+        s.classList.toggle('active', index === step);
     });
-    
+    updateProgressBar();
+}
+
+function updateProgressBar() {
+    const progressBar = document.getElementById('progressBar');
+    const progressPercentage = ((currentStep + 1) / steps.length) * 100;
+    progressBar.style.width = `${progressPercentage}%`;
+}
+
+showStep(currentStep);
