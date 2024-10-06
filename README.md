@@ -1,4 +1,3 @@
-
 <h1>Description</h2>
 <img src="./img/image.png" alt="Image">
 FitFocus is a web application designed to deliver customized diet plans directly to your inbox. It provides users with personalized, actionable nutrition advice through regular newsletters, helping them stay on track with their fitness and health goals.
