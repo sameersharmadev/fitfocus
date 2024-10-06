@@ -7,16 +7,16 @@ const items = document.querySelectorAll('.carousel-item');
             if (i === index) {
                 item.classList.add('active');
             }
-        });
+        }); 
     }
 
     document.getElementById('next').addEventListener('click', () => {
-        currentIndex = (currentIndex + 1) % items.length; // Move to the next item
+        currentIndex = (currentIndex + 1) % items.length; 
         showItem(currentIndex);
     });
 
     document.getElementById('prev').addEventListener('click', () => {
-        currentIndex = (currentIndex - 1 + items.length) % items.length; // Move to the previous item
+        currentIndex = (currentIndex - 1 + items.length) % items.length;
         showItem(currentIndex);
     });
 

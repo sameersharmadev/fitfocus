@@ -1051,7 +1051,6 @@ video {
 .fade-in {
   opacity: 0;
   animation: fadeIn 0.5s forwards;
-  /* Change duration as needed */
 }
 
 @keyframes fadeIn {
@@ -1319,7 +1318,7 @@ body {
 img {
     pointer-events: none;
 }
-@media (min-width: 768px) { /* Medium screens and larger */
+@media (min-width: 768px) { 
   .joinbutton {
       width: 20%; 
       align-self: flex-end;
@@ -1333,4 +1332,54 @@ img {
     margin-bottom: 5%;
     width:70%;
   }
+  .wrapper{
+    background: rgb(240 240 240);
+    padding: 0.5rem 1rem;
+    border-radius: 15px;
+  }
+}
+ul, li{
+  list-style: none;
+  padding: 0;
+}
+.wrapper{
+  background: rgb(240 240 240);
+  padding: 0.5rem 1rem;
+  border-radius: 15px;
+}
+h1{
+  font-size: 1.1rem;
+  font-family: sans-serif;
+}
+.sessions{
+  border-radius: 12px;
+
+}
+li{
+  padding-bottom: 1.5rem;
+  position: relative;
+  padding-left: 15px;
+  margin-left: 10px;
+  &:last-child{
+    border: 0px;
+    padding-bottom: 0;
+  }
+  &:before{
+    content: '';
+    width: 15px;
+    height: 15px;
+    background: white;
+    border: 1px solid #2a2839;
+    box-shadow: 3px 3px 0px #9ca3af;
+    box-shadow: 3px 3px 0px #bab5f8;
+    border-radius: 50%;
+    position: absolute;
+    left: -10px;
+    top: 4px;
+  }
+}
+.time{
+  color: #2a2839;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
 }

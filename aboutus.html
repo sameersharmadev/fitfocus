@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="./css/output.css" rel="stylesheet">
+    <link rel="icon" href="./img/logo.png">
+    <title>About Us</title>
+</head>
+<body class="overflow-x-hidden fade-in">
+    <nav class="relative container mx-auto">
+        <div class="md:flex flex-row hidden justify-between items-center w-full mx-auto md:fixed top-0 left-0 right-0 z-50 bg-white shadow shadow-sm px-8">
+            <div class="flex flex-row text-4xl px-8 font-semibold py-3">
+                <img src="./img/logo.png" class="h-9">
+                <p>FitFocus</p>
+            </div>
+            <div class="flex md:flex-row-reverse md:gap-x-8 md:text-xl items-center">
+                <a href="./signup.html" id="plan" class="rounded-md bg-accent-color hover:bg-accent-color-dark px-3 py-0.4 md:py-1 text-white focus:ring">Get Your Plan</a>
+                <a href="#contact" class="hover:text-accent-color">Contact</a>
+                
+                <a href="#features" class="hover:text-accent-color">Features</a>
+                <a href="./index.html" class="hover:text-accent-color">Home</a>
+            </div>
+        </div>
+        
+        <div class="flex relative md:hidden items-center justify-end mx-6 mt-4">
+            <button id="menu-toggle" class="text-3xl p-1 focus:outline-none">
+                &#9776;
+            </button>
+        </div>
+        
+        <div id="full-screen-menu" class="fixed top-0 left-0 w-full h-full bg-black text-white bg-opacity-90 z-50 hidden flex flex-col-reverse items-center justify-center">
+            <button id="menu-close" class="absolute top-4 right-4 text-4xl focus:outline-none">&times;</button>
+            
+            <a href="./signup.html" id="plan" class="links hover:text-accent-color text-xl mb-4 text-left">Get Your Plan</a>
+            <a href="#features" class="links hover:text-accent-color text-xl mb-4 text-left">Features</a>
+            <a href="#contact" class="links hover:text-accent-color text-xl mb-4 text-left">Contact</a>
+            <a href="./index.html" class="links hover:text-accent-color text-xl mb-4">Home</a>
+            <a class="text-3xl mb-10 text-left">Menu</a>
+        </div>
+    </nav>
+    <section id="vision" class="container w-full mx-auto py-10 md:py-15">
+        <div class="px-8 flex flex-col-reverse md:flex-row justify-center gap-2 text-left w-full md:text-left md:pt-20">
+            <div class="flex flex-col justify-center md:justify-end ">
+                <p class="text-4xl md:text-5xl text-center md:text-left font-semibold pb-6 md:pb-10">Our vision</p>
+                <div class=" flex flex-col gap-4">
+                    <p>At FitFocus, our mission is to help individuals lead healthier, happier lives by providing personalized meal plans. We believe that everyone deserves access to quality nutrition, which is why our meal plans are offered completely free of charge.</p>
+                    <p>
+                    Thanks to the generous donations from our community and the support of our trusted business partners, we can continue to provide these valuable resources at no cost.</p>
+                </div>
+            </div>
+            <div class="flex flex-col justify-center items-end">
+                <img src="./img/about.png" class="w-9/12 md:w-9/12">
+            </div>
+           
+        </div>
+    </section>
+    <section id="story" class="container w-full mx-auto py-10 md:py-15">
+        <div class="px-8 flex flex-col-reverse md:flex-row-reverse justify-center gap-6 text-left w-full md:text-left">
+            <div class="flex flex-col justify-centermd:justify-end">
+                <p class="text-4xl md:text-5xl text-center md:text-left font-semibold pb-6 md:pb-10">Our story</p>
+                <div class=" flex flex-col gap-4">
+                    <p>FitFocus was born out of a desire to simplify healthy eating.
+                    We noticed that many people struggle with finding the right meal plan that suits their busy lives and nutritional needs.</p> <p>
+                    That's why we created a platform where anyone can receive custom diet plans directly to their inbox, for free.
+                    And today, we have created a community of over 100,000 people with a goal of making healthy diet a norm.</p>
+                </div>
+            </div>
+            <div class="flex flex-col justify-end items-start">
+                <img src="./img/ourstory.png" class="w-11/12 md:w-9/12">
+            </div>
+           
+        </div>
+    </section>
+    <section id="milestone" class="container w-full mx-auto py-10 md:py-15">
+        <div class="px-8 flex flex-col-reverse md:flex-row justify-between gap-2 text-left w-full md:text-left md:py-20">
+            <div class="flex flex-col justify-center md:justify-end ">
+                <p class="text-4xl md:text-5xl text-center md:text-left font-semibold pb-6 md:pb-10">Milestones</p>
+                <div class=" flex flex-col gap-4">
+                          <ul>
+                            <li>
+                              <div class="time">2017: Launch of FitFocus<br>FitFocus was launched with the mission to make healthy eating simple and accessible</div>
+                            </li>
+                            <li>
+                              <div class="time">2018: 1,000 users world-wide<br>Reached our first 1,000 users who trusted us to help them with personalized meal plans.</div>
+                            </li>
+                            <li>
+                              <div class="time">2019: Partnership with nutrition experts<br>Partnered with certified nutritionists to ensure our meal plans are balanced and effective.</div>
+                              
+                            </li>
+                            <li>
+                              <div class="time">2020: 100,000+ success stories<br>Celebrated over 100,000 users achieving their health and fitness goals.</div>
+                            </li>
+                            <li>
+                              <div class="time">2022: Raised $50,000 with help of donations<br>This funding allows us to enhance our services, and continue making a positive impact</div>
+                             
+                            </li>
+                          </ul>
+                        
+                      
+                </div>
+            </div>
+            <div class="flex flex-col justify-end items-center">
+                <img src="./img/milestone.png" class="w-9/12 md:w-10/12">
+            </div>
+           
+        </div>
+    </section>
+
+    <section class="px-8 md:px-32 py-10">
+        <h2 class="text-center text-4xl md:text-5xl md:mb-16">Our Team</h2>
+        <div class="flex flex-col md:flex-row md:justify-between mt-8">
+          <div class="flex flex-col items-center mb-8 md:mb-0 md:w-1/4">
+            <img src="./img/team1.png" alt="Team Member 1" class="w-32 h-32 rounded-full mb-4">
+            <h3 class="text-xl font-semibold">Sarah Thompson</h3>
+            <p class="text-lg text-gray-600">Head Nutritionist</p>
+            <p class="text-center mt-2">Sarah is a certified nutritionist with over 10 years of experience in creating meal plans tailored to individual health goals.</p>
+          </div>
+      
+          <div class="flex flex-col items-center mb-8 md:mb-0 md:w-1/4">
+            <img src="./img/team2.png" alt="Team Member 2" class="w-32 h-32 rounded-full mb-4">
+            <h3 class="text-xl font-semibold">Michael Lee</h3>
+            <p class="text-lg text-gray-600">Fitness Consultant</p>
+            <p class="text-center mt-2">Michael is a fitness expert who works closely with clients to ensure their diet plans align with their workout routines.</p>
+          </div>
+      
+          <div class="flex flex-col items-center mb-8 md:mb-0 md:w-1/4">
+            <img src="./img/team3.png" alt="Team Member 3" class="w-32 h-32 rounded-full mb-4">
+            <h3 class="text-xl font-semibold">Emily Carter</h3>
+            <p class="text-lg text-gray-600">Customer Success Manager</p>
+            <p class="text-center mt-2">Emily ensures that all FitFocus users have an excellent experience and is the go-to person for support.</p>
+          </div>
+      
+          <div class="flex flex-col items-center mb-8 md:mb-0 md:w-1/4">
+            <img src="./img/team4.png" alt="Team Member 4" class="w-32 h-32 rounded-full mb-4">
+            <h3 class="text-xl font-semibold">David Patel</h3>
+            <p class="text-lg text-gray-600">Chief Technology Officer</p>
+            <p class="text-center mt-2">David leads the development team, ensuring that FitFocus's platform remains user-friendly and secure.</p>
+          </div>
+        </div>
+      </section>
+      
+      <footer>
+        <div class="bg-accent-color h-52 w-full justify-center text-white items-center text-center space-y-10">
+            <div class="socialmedia flex flex-row gap-3 justify-center pt-10">
+                <a href="https://www.whatsapp.com/" target="_blank"><img src="img/whatsapp.png" class="w-6 md:w-10"></a>
+                <a href="https://www.facebook.com/" target="_blank"><img src="img/facebook.png" class="w-6 md:w-10"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="img/instagram.png" class="w-6 md:w-10"></a>
+                
+            </div>
+            <p class="">© FitFocus 2024<br>All Rights Reserved</p>
+        </div>
+    </footer>
+    <script src="./javascript/aboutus.js"></script>
+</body>
+</html>
