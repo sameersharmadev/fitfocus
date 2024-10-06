@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FitFocus</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="./css/output.css" rel="stylesheet">
     <link rel="icon" href="./img/logo.png">
@@ -12,15 +13,14 @@
 <body class="overflow-x-hidden fade-in">
     <nav class="relative container mx-auto">
         <div class="md:flex flex-row hidden justify-between items-center w-full mx-auto md:fixed top-0 left-0 right-0 z-50 bg-white shadow shadow-sm px-8">
-            <div class="flex flex-row text-4xl px-8 font-semibold py-3">
+            <div class="tohome flex flex-row text-4xl px-8 font-semibold py-3" style="cursor: pointer;">
                 <img src="./img/logo.png" class="h-9">
                 <p>FitFocus</p>
             </div>
             <div class="flex md:flex-row-reverse md:gap-x-8 md:text-xl items-center">
                 <a href="./signup.html" id="plan" class="rounded-md bg-accent-color hover:bg-accent-color-dark px-3 py-0.4 md:py-1 text-white focus:ring">Get Your Plan</a>
-                <a href="#contact" class="hover:text-accent-color">Contact</a>
                 <a href="./aboutus.html" class="hover:text-accent-color">About Us</a>
-                <a href="#features" class="hover:text-accent-color">Features</a>
+                <a href="#" class="contactlink hover:text-accent-color">Contact Us</a>
             </div>
         </div>
         
@@ -34,9 +34,9 @@
             <button id="menu-close" class="absolute top-4 right-4 text-4xl focus:outline-none">&times;</button>
             
             <a href="./signup.html" id="plan" class="links hover:text-accent-color text-xl mb-4 text-left">Get Your Plan</a>
-            <a href="#features" class="links hover:text-accent-color text-xl mb-4 text-left">Features</a>
-            <a href="#contact" class="links hover:text-accent-color text-xl mb-4 text-left">Contact</a>
-            <a href="./aboutus.html" class="links hover:text-accent-color text-xl mb-4">About</a>
+            <a href="#" class="links contactlink hover:text-accent-color hover:text-accent-color text-xl mb-4" id="mobcontactlink">Contact Us</a>
+            <a href="./aboutus.html" class="links hover:text-accent-color text-xl mb-4">About Us</a>
+
             <a class="text-3xl mb-10 text-left">Menu</a>
         </div>
     </nav>
@@ -401,6 +401,56 @@
             </div>
         </div>
     </section>
+    <div id="contactModal" class="contact-popup">
+        <div class="contact-content">
+            <span class="close z-10">&times;</span>
+    
+            <div class="form-content">
+                <h1 class="contact-heading">Get in touch</h1>
+                <p class="contact-subheading">For any queries, feedback, we will answer everything!</p>
+    
+                <form class="contact-form">
+                    <div class="form-row firstlastname md:flex md:flex-row">
+                        <div class="input-group firstlastname md:w-1/2">
+                            <i class="fas fa-user"></i>
+                            <input type="text" placeholder="First Name" required>
+                        </div>
+                        <div class="input-group firstlastname md:w-1/2">
+                            <i class="fas fa-user"></i>
+                            <input type="text" placeholder="Last Name" required>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" placeholder="Email Address" required>
+                    </div>
+                    <div class="input-group">
+                        <i class="fas fa-phone-alt"></i>
+                        <input type="tel" placeholder="Phone Number (Optional)">
+                    </div>
+                    <div class="input-group">
+                        <textarea placeholder="Start Writing..."></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        Submit
+                    </button>
+                    
+                    
+                </form>
+            </div>
+    
+            <div class="image-content bg-cover bg-center" style="background-image: url('./img/contact.jpg');">
+                
+                <div class="social-icons flex items-center justify-center">
+                    <i class="flex items-center justify-center fab fa-facebook"></i>
+                    <i class="fab fa-whatsapp"></i>
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
     <footer>
         <div class="bg-accent-color h-52 w-full justify-center text-white items-center text-center space-y-10">
             <div class="socialmedia flex flex-row gap-3 justify-center pt-10">
