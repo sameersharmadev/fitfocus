@@ -60,24 +60,30 @@ document.getElementById('closePopup').addEventListener('click', function() {
 });
 
 
-
 const form = document.querySelector('form');
 const inputs = form.querySelectorAll('input, textarea'); 
+let isFormCompleted = false;
+let closePopupPressed = false;
 
 inputs.forEach(input => {
     input.addEventListener('input', () => {
-        isFormCompleted = Array.from(inputs).some(input => input.value.trim() !== '');
+        isFormCompleted = Array.from(inputs).some(input => input.required && input.value.trim() === '');
     });
 });
 
+const closePopupButton = document.querySelector('#close-popup-button');
+closePopupButton.addEventListener('click', () => {
+    closePopupPressed = true;
+});
 
 window.addEventListener('beforeunload', function(event) {
-    if (isFormCompleted) {
+    if (isFormCompleted && !closePopupPressed) {
         const message = "You have unsaved changes. Are you sure you want to leave?";
         event.returnValue = message; 
         return message; 
     }
 });
+
 
 const links = document.querySelectorAll('.links');
 const menuToggle = document.getElementById('menu-toggle');
