@@ -10,10 +10,15 @@
     <link rel="icon" href="./img/logo.png">
 
 </head>
+
 <body class="bg-gray-100 overflow-x-hidden fade-in">
     <form id="myForm">
-        
-        <div class="w-full bg-gray-300 h-2 rounded mb-4">
+        <div class="absolute md:fixed top-4 left-4">
+    <button id="theme-toggle" class="theme-toggle px-2 py-1 rounded focus:outline-none rounded-full">
+        <i id="theme-icon" class="fas fa-sun text-black-400"></i>
+    </button>
+</div>
+        <div class="w-full stepx h-2 rounded mb-4">
             <div id="progressBar" class="bg-accent-color h-full rounded" style="width: 0%;">
         </div>
         <a href="index.html" class="back-arrow">
@@ -21,9 +26,9 @@
         </a>
     <div class="flex justify-center h-screen items-center md:h-screen container mx-auto my-auto p-4">
         
-        <div class="step active container flex step active p-4 md:flex-row gap-8 justify-center items-center mx-auto text-center md:gap-6 w-10/12 rounded-md bg-white" id="step1">
+        <div class="step active container flex step active p-4 md:flex-row gap-8 justify-center items-center mx-auto text-center md:gap-6 w-10/12 rounded-md bg-whitexx" id="step1">
             <div class="md:w-1/2 image hidden md:flex flex-row md:flex-col items-center">
-                <img src="./img/height.png" alt="person's lifestyle" class="md:w-9/12">
+                <img src="./img/height.png" alt="person's lifestyle" class="md:w-7/12">
             </div>
             <div class="md:w-1/2 flex flex-col flex-grow justify-between min-h-[400px]"> 
                 <h4 class="text-xl md:text-3xl font-semibold text-left">Some basic information...</h4>
@@ -58,7 +63,7 @@
         </div>
         
 
-        <div class="step hidden container flex step active p-4 md:flex-row gap-8 justify-center items-center mx-auto text-center md:gap-6 w-10/12 rounded-md bg-white" id="step2">
+        <div class="step hidden container flex step active p-4 md:flex-row gap-8 justify-center items-center mx-auto text-center md:gap-6 w-10/12 rounded-md bg-whitex" id="step2">
             <div class="md:w-1/2 image hidden md:flex flex-row md:flex-col items-center">
                 <img src="./img/lifestyle.png" alt="person's lifestyle" class="md:w-7/12">
             </div>
@@ -101,7 +106,7 @@
         
 
         <!-- Step 4 -->
-        <div class="step hidden container flex step active p-4 md:flex-row gap-8 justify-center items-center mx-auto text-center md:gap-6 w-10/12 rounded-md bg-white" id="step3">
+        <div class="step hidden container flex step active p-4 md:flex-row gap-8 justify-center items-center mx-auto text-center md:gap-6 w-10/12 rounded-md bg-whitex" id="step3">
             <div class="md:w-1/2 image hidden md:flex flex-row md:flex-col items-center">
                 <img src="./img/scale.png" alt="body measurements" class="md:w-10/12">
             </div>
@@ -110,7 +115,7 @@
                 <div class="flex flex-col gap-4 text-left flex-grow">
                     <div class="flex flex-col gap-4">
                         <div>
-                            <label for="body-fat"><code class="text-xs text-blue">Directly enter body fat percentage or calculate by entering neck and belly measurement below:</code></label>
+                            <label for="body-fat"><code class="text-xs">Directly enter body fat percentage or calculate by entering neck and belly measurement below:</code></label>
                             <input id="body-fat" class="px-2 w-full h-10 border border-solid" type="text" placeholder="Body Fat % (Autofills with neck and waist measurements)" required>
                         </div>
                         <div>
@@ -134,7 +139,7 @@
         
 
         <!-- Step 5 -->
-        <div class="step hidden container flex step active p-4 md:flex-row gap-8 justify-center items-center mx-auto text-center md:gap-6 w-10/12 rounded-md bg-white" id="step4">
+        <div class="step hidden container flex step active p-4 md:flex-row gap-8 justify-center items-center mx-auto text-center md:gap-6 w-10/12 rounded-md bg-whitex" id="step4">
             <div class="md:w-1/2 image hidden md:flex flex-row md:flex-col items-center">
                 <img src="./img/mirror.png" alt="self reflection" class="md:w-9/12">
             </div>
@@ -173,7 +178,7 @@
                 </div>
             </div>
         </div>
-        <div class="step hidden container flex step active p-4 md:flex-row gap-8 justify-center items-center mx-auto text-center md:gap-6 w-10/12 rounded-md bg-white" id="step5">
+        <div class="step hidden container flex step active p-4 md:flex-row gap-8 justify-center items-center mx-auto text-center md:gap-6 w-10/12 rounded-md bg-whitex" id="step5">
             <div class="md:w-1/2 image hidden md:flex flex-row md:flex-col items-center">
                 <img src="./img/preference.png" alt="person's lifestyle" class="md:w-8/12">
             </div>
@@ -192,7 +197,7 @@
                 </div>
             </div>
         </div>
-        <div class="step hidden p-4 container flex flex-col md:flex-row gap-8 justify-center items-center mx-auto text-center md:px-28 md:gap-6 w-10/12 rounded-xl bg-white" id="step6">
+        <div class="step hidden p-4 container flex flex-col md:flex-row gap-8 justify-center items-center mx-auto text-center md:px-28 md:gap-6 w-10/12 rounded-xl bg-whitex" id="step6">
             <div class="image flex flex-row md:flex-col items-center">
                 <img src="./img/logo.png" alt="logo" class="w-20 md:w-32">
                 <h5 class="md:text-4xl text-3xl font-bold">Join Fitfocus Today</h5>
@@ -228,7 +233,7 @@
       </div>
     </form>
     <div id="contactModal" class="contact-popup">
-        <div class="contact-content">
+        <div class="contact-content text-black">
             <span class="close z-10">&times;</span>
     
             <div class="form-content">

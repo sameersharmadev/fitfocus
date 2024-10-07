@@ -11,8 +11,13 @@
     <title>About Us</title>
 </head>
 <body class="overflow-x-hidden fade-in">
+    <div class="absolute md:fixed top-4 left-4 z-50">
+        <button id="theme-toggle" class="theme-toggle px-2 py-1 rounded focus:outline-none rounded-full">
+            <i id="theme-icon" class="fas fa-sun text-black-400"></i>
+        </button>
+    </div>
     <nav class="relative container mx-auto">
-        <div class="md:flex flex-row hidden justify-between items-center w-full mx-auto md:fixed top-0 left-0 right-0 z-50 bg-white shadow shadow-sm px-8">
+        <div class="md:flex flex-row hidden justify-between items-center w-full mx-auto md:fixed top-0 left-0 right-0 z-10 bg-white shadow shadow-sm px-8">
             <div class="flex flex-row text-4xl px-8 font-semibold py-3 tohome" style="cursor: pointer;">
                 <img src="./img/logo.png" class="h-9">
                 <p>FitFocus</p>
@@ -49,8 +54,8 @@
                     Thanks to the generous donations from our community and the support of our trusted business partners, we can continue to provide these valuable resources at no cost.</p>
                 </div>
             </div>
-            <div class="flex flex-col justify-start items-center">
-                <img src="./img/about.png" class="w-9/12 md:w-9/12">
+            <div class="flex flex-col justify-start items-center abtimg">
+                <img id="about-image" src="./img/about.png" class="w-9/12 md:w-9/12">
             </div>
            
         </div>
@@ -67,7 +72,7 @@
                 </div>
             </div>
             <div class="flex flex-col justify-between items-center">
-                <img src="./img/ourstory.png" class="w-8/12 md:w-9/12">
+                <img id="our-story-img" src="./img/ourstory.png" class="w-8/12 md:w-9/12">
             </div>
            
         </div>
@@ -100,7 +105,7 @@
                       
                 </div>
             </div>
-            <div class="flex flex-col justify-end items-center">
+            <div class="rocketimg flex flex-col justify-end items-center">
                 <img src="./img/milestone.png" class="w-9/12 md:w-9/12 rotate-45">
             </div>
            
@@ -140,7 +145,7 @@
         </div>
       </section>
       <div id="contactModal" class="contact-popup">
-        <div class="contact-content">
+        <div class="contact-content text-black placeholder-gray-700">
             <span class="close z-10">&times;</span>
     
             <div class="form-content">
@@ -189,8 +194,8 @@
         </div>
     </div>
     
-      <footer>
-        <div class="bg-accent-color h-52 w-full justify-center text-white items-center text-center space-y-10">
+    <footer>
+        <div class="bg-accent-color-darkfooter h-52 w-full justify-center text-white items-center text-center space-y-10">
             <div class="socialmedia flex flex-row gap-3 justify-center pt-10">
                 <a href="https://www.whatsapp.com/" target="_blank"><img src="img/whatsapp.png" class="w-6 md:w-10"></a>
                 <a href="https://www.facebook.com/" target="_blank"><img src="img/facebook.png" class="w-6 md:w-10"></a>

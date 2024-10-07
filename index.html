@@ -11,14 +11,19 @@
     <link rel="icon" href="./img/logo.png">
 </head>
 <body class="overflow-x-hidden fade-in">
+    <div class="absolute md:fixed top-4 left-4 z-50">
+        <button id="theme-toggle" class="theme-toggle px-2 py-1 rounded focus:outline-none rounded-full">
+            <i id="theme-icon" class="fas fa-sun text-black-400"></i>
+        </button>
+    </div>
     <nav class="relative container mx-auto">
-        <div class="md:flex flex-row hidden justify-between items-center w-full mx-auto md:fixed top-0 left-0 right-0 z-50 bg-white shadow shadow-sm px-8">
+        <div class="md:flex flex-row hidden justify-between items-center w-full mx-auto md:fixed top-0 left-0 right-0 z-10 bg-white shadow shadow-sm px-8">
             <div class="tohome flex flex-row text-4xl px-8 font-semibold py-3" style="cursor: pointer;">
                 <img src="./img/logo.png" class="h-9">
                 <p>FitFocus</p>
             </div>
             <div class="flex md:flex-row-reverse md:gap-x-8 md:text-xl items-center">
-                <a href="./signup.html" id="plan" class="rounded-md bg-accent-color hover:bg-accent-color-dark px-3 py-0.4 md:py-1 text-white focus:ring">Get Your Plan</a>
+                <a href="./signup.html" id="plan" class="rounded-md bg-accent-colorx hover:bg-accent-color-dark px-3 py-0.4 md:py-1 text-white focus:ring">Get Your Plan</a>
                 <a href="./aboutus.html" class="hover:text-accent-color">About Us</a>
                 <a href="#" class="contactlink hover:text-accent-color">Contact Us</a>
             </div>
@@ -57,7 +62,7 @@
                     FitFocus provides personalized meal plans and nutrition tracking to help you achieve your health and fitness goals
                 </p>
                 <div class="">
-                    <a href="./signup.html" id="plan" class="rounded-md bg-accent-color hover:bg-accent-color-dark px-4 py-2 text-white focus:ring md:max-w-sm md:text-2xl" ><b>GET YOUR PLAN FOR FREE</b></a>
+                    <a href="./signup.html" id="plan" class="rounded-md bg-accent-colorx hover:bg-accent-color-dark px-4 py-2 focus:ring md:max-w-sm md:text-2xl" ><b>GET YOUR PLAN FOR FREE</b></a>
                 </div>
                 <div class="flex flex-row items-center px-2 gap-2 md:justify-start">
                     <img src="./img/followers.png" class="w-2/12 md:w-1/12">
@@ -187,7 +192,7 @@
         <div class="w-4/5 mx-auto md:ml-auto md:mr-0 md:w-2/5">
             <h4 class="text-3xl font-semibold text-center md:text-left">Our success stories</h2>
             <div class="relative mt-5">
-                <div class="carousel text-black">
+                <div class="carousel">
                     <div class="carousel-item active">
                         <div class="p-5 bg-basic rounded-lg shadow-sm text-center">
                             <img src="./img/raj.png" alt="Client 1" class="rounded-full mx-auto mb-4 w-20 h-20">
@@ -320,61 +325,61 @@
         <div class="grid grid-cols-3 md:grid-cols-5 gap-4 px-10">
           <div class="flex flex-col items-center">
             <div class="h-16 w-16 overflow-hidden rounded-full mb-2">
-              <img src="./img/partner1.png" alt="Partner 1" class="h-full w-full object-cover">
+              <img src="./img/partner1.png" alt="Partner 1" class="partnerimg h-full w-full object-cover">
             </div>
             <p class="text-center">Dr. Health</p>
           </div>
           <div class="flex flex-col items-center">
             <div class="h-16 w-16 overflow-hidden rounded-full mb-2">
-              <img src="./img/partner2.png" alt="Partner 2" class="h-full w-full object-cover">
+              <img src="./img/partner2.png" alt="Partner 2" class="partnerimg h-full w-full object-cover">
             </div>
             <p class="text-center">FitFusion</p>
           </div>
           <div class="flex flex-col items-center">
             <div class="h-16 w-16 overflow-hidden rounded-full mb-2">
-              <img src="./img/partner3.png" alt="Partner 3" class="h-full w-full object-cover">
+              <img src="./img/partner3.png" alt="Partner 3" class="partnerimg h-full w-full object-cover">
             </div>
             <p class="text-center">HealthNest</p>
           </div>
           <div class="flex flex-col items-center">
             <div class="h-16 w-16 overflow-hidden rounded-full mb-2">
-              <img src="./img/partner4.png" alt="Partner 4" class="h-full w-full object-cover">
+              <img src="./img/partner4.png" alt="Partner 4" class="partnerimg h-full w-full object-cover">
             </div>
             <p class="text-center">FeulHub</p>
           </div>
           <div class="flex flex-col items-center">
             <div class="h-16 w-16 overflow-hidden rounded-full mb-2">
-              <img src="./img/partner5.png" alt="Partner 5" class="h-full w-full object-cover">
+              <img src="./img/partner5.png" alt="Partner 5" class="partnerimg h-full w-full object-cover">
             </div>
             <p class="text-center">BalanceBites</p>
           </div>
           <div class="flex flex-col items-center">
             <div class="h-16 w-16 overflow-hidden rounded-full mb-2">
-              <img src="./img/partner6.png" alt="Partner 6" class="h-full w-full object-cover">
+              <img src="./img/partner6.png" alt="Partner 6" class="partnerimg h-full w-full object-cover">
             </div>
             <p class="text-center font">EnergizeNow</p>
           </div>
           <div class="flex flex-col items-center">
             <div class="h-16 w-16 overflow-hidden rounded-full mb-2">
-              <img src="./img/partner7.png" alt="Partner 7" class="h-full w-full object-cover">
+              <img src="./img/partner7.png" alt="Partner 7" class="partnerimg h-full w-full object-cover">
             </div>
             <p class="text-center">VitalityHub</p>
           </div>
           <div class="flex flex-col items-center">
             <div class="h-16 w-16 overflow-hidden rounded-full mb-2">
-              <img src="./img/partner8.png" alt="Partner 8" class="h-full w-full object-cover">
+              <img src="./img/partner8.png" alt="Partner 8" class="partnerimg h-full w-full object-cover">
             </div>
             <p class="text-center">StrongSpehere</p>
           </div>
           <div class="flex flex-col items-center">
             <div class="h-16 w-16 overflow-hidden mb-2">
-              <img src="./img/partner9.png" alt="Partner 9" class="h-full w-full object-cover">
+              <img src="./img/partner9.png" alt="Partner 9" class=" h-full w-full object-cover">
             </div>
             <p class="text-center">Nutrisync</p>
           </div>
           <div class="flex flex-col items-center hidden md:flex">
             <div class="h-16 w-16 overflow-hidden mb-2">
-              <img src="./img/partner10.png" alt="Partner 10" class="h-full w-full object-cover">
+              <img src="./img/partner10.png" alt="Partner 10" class=" h-full w-full object-cover">
             </div>
             <p class="text-center">PeakNutrition</p>
           </div>
@@ -397,12 +402,12 @@
                 </div> 
             </div>
             <div class="flex justify-center md:justify-center">
-                <img src="./img/contact.png " class="w-4/5 h-auto">
+                <img src="./img/contac3.png " class="w-4/5 h-auto contact-img">
             </div>
         </div>
     </section>
     <div id="contactModal" class="contact-popup">
-        <div class="contact-content">
+        <div class="contact-content text-black-900 !important placeholder-gray-400 !important">
             <span class="close z-10">&times;</span>
     
             <div class="form-content">
@@ -452,7 +457,7 @@
     </div>
     
     <footer>
-        <div class="bg-accent-color h-52 w-full justify-center text-white items-center text-center space-y-10">
+        <div class="bg-accent-color-darkfooter h-52 w-full justify-center text-white items-center text-center space-y-10">
             <div class="socialmedia flex flex-row gap-3 justify-center pt-10">
                 <a href="https://www.whatsapp.com/" target="_blank"><img src="img/whatsapp.png" class="w-6 md:w-10"></a>
                 <a href="https://www.facebook.com/" target="_blank"><img src="img/facebook.png" class="w-6 md:w-10"></a>
