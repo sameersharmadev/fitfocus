@@ -1,4 +1,23 @@
 
+const currentTheme = localStorage.getItem('theme');
+
+if (currentTheme) {
+    document.documentElement.classList.add(currentTheme);
+} else {
+    document.documentElement.classList.remove('dark');
+}
+
+const toggleButton = document.getElementById('theme-toggle');
+toggleButton.addEventListener('click', () => {
+    document.documentElement.classList.toggle('dark');
+    if (document.documentElement.classList.contains('dark')) {
+        localStorage.setItem('theme', 'dark');
+    } else {
+        localStorage.setItem('theme', 'light');
+    }
+});
+
+
 const links = document.querySelectorAll('.links');
 const menuToggle = document.getElementById('menu-toggle');
 const fullScreenMenu = document.getElementById('full-screen-menu');
