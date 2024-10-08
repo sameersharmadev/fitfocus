@@ -2,11 +2,11 @@
 <img src="./img/image.png" alt="Image">
 FitFocus is a web application designed to deliver customized diet plans directly to your inbox. It provides users with personalized, actionable nutrition advice through regular newsletters, helping them stay on track with their fitness and health goals.
 
-<h2>WebsiteUrl </h2>
+<h2>Project URL </h2>
 https://sameersharmadev.github.io/fitfocus/
 </br>
 
-<h2>Technologies Used</h2>
+<h2>Technologies used</h2>
 
 + HTML
 + CSS
