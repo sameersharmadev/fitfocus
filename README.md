@@ -1,11 +1,10 @@
 <h1>Description</h2>
 <img src="./img/image.png" alt="Image">
 FitFocus is a web application designed to deliver customized diet plans directly to your inbox. It provides users with personalized, actionable nutrition advice through regular newsletters, helping them stay on track with their fitness and health goals.
-
 <h2>Project website URL </h2>
 https://sameersharmadev.github.io/fitfocus/
 </br>
-
+<hr>
 
 <h2>Project Features</h2>
 
@@ -16,9 +15,10 @@ https://sameersharmadev.github.io/fitfocus/
   The website adapts seamlessly across all devices, ensuring an optimal user experience on mobile, tablet, and desktop.
 + <h4>Optimized for production</h4>
   CSS and JS are fully optimized for production, i.e  the code is minified, and TailwindCSS is purged
+  <h4> #Note for Javascript and CSS code</h4>
+  The JavaScript and CSS in this project is minified to improve loading performance. If you'd like to view the full source code, you can use a deminifier tool or a browser's built-in "Pretty Print" option in the developer tools.
+<hr>
 
-<h4> #Note for Javascript and CSS code</h4>
-The JavaScript and CSS in this project is minified to improve loading performance. If you'd like to view the full source code, you can use a deminifier tool or a browser's built-in "Pretty Print" option in the developer tools.
 
 <h2>Section breakdown</h2>
 
@@ -69,7 +69,7 @@ The JavaScript and CSS in this project is minified to improve loading performanc
   + <b>Meet Our Team:</b> This section introduces the core team behind FitFocus, giving a personal touch by sharing roles and contributions.
 + <h3>Contact</h3>
   The Contact Page is designed as an intuitive and short popup form that allows users to easily submit their information, queries, and feedback. This section focuses on helping users connect with the team effortlessly, enhancing user support and engagement.
-
+<hr>
 <h2>Technologies used</h2>
 
 + HTML, CSS, Javascript
