@@ -27,7 +27,7 @@ The JavaScript and CSS in this project is minified to improve loading performanc
 
   + <b>Hero section:</b> The hero section is carefully crafted to immediately capture attention. A bold headline, engaging imagery, and a prominent CTA button are strategically placed to draw users in and encourage sign-ups or interaction right from the start.
 
-  + <b>Feature overview:</b> Following the hero section, the website highlights key features in a visually appealing format. This section succinctly presents the core offerings of FitFocus, helping users quickly understand the value proposition.
+  + <b>Feature overview:</b> Following the hero section, the website highlights key features in a visually appealing format. This section presents the core offerings of FitFocus, helping users quickly understand the value proposition.
 
   + <b>How it works:</b> A dedicated section explains the process in simple terms, ensuring that users can easily grasp how the platform functions and what they can expect.
 
@@ -50,7 +50,7 @@ The JavaScript and CSS in this project is minified to improve loading performanc
   
   + <b>Progress Bar:</b> A visible progress bar tracks the user's journey through the form, keeping them motivated to complete each step.
     
-  + <b>Built-in Calculators:</b> Integrated calculators help users input personalized data effortlessly, ensuring accuracy and convenience.
+  + <b>Built-in Calculators:</b> Integrated calculators help users input and calculate required data effortlessly, ensuring accuracy and convenience.
     
   + <b>User Preferences:</b> The form gathers essential preferences in a logical order, ensuring a smooth flow from one step to the next.
     
