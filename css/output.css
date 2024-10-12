@@ -124,6 +124,7 @@
 body {
     margin: 0;
     line-height: inherit;
+    background-color:#f5f3ea;
 }
 hr {
     height: 0;
@@ -1047,9 +1048,9 @@ li {
 .bg-white {
     background-color: #f5f3ea;
 }
-body{
-background-color:#f5f3ea
-}
+
+
+
 body.dark-mode {
     background-color: #0d1117;
     color: #e0e0e0;
