@@ -60,11 +60,11 @@ https://sameersharmadev.github.io/fitfocus/
 + <h3>About</h3>
   The About us section is thoughtfully designed to convey the goals, vision, and journey. It includes:
 
-  + <b>Our Goals and Vision:</b> This section outlines our mission, emphasizing our commitment to delivering personalized nutrition advice to help users achieve their fitness and health goals.
+  + <b>Our Goals and Vision:</b> This section outlines the mission, emphasizing commitment to delivering personalized nutrition advice to help users achieve their fitness and health goals.
   
   + <b>Our Story:</b> A dedicated segment shares the origin of FitFocus, highlighting the motivation and values that drive the platform.
   
-  + <b>Milestones:</b> Key achievements and important milestones are showcased to reflect our progress and growth over time.
+  + <b>Milestones:</b> Key achievements and important milestones are showcased to reflect progress and growth over time.
   
   + <b>Meet Our Team:</b> This section introduces the core team behind FitFocus, giving a personal touch by sharing roles and contributions.
 + <h3>Contact</h3>
