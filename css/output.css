@@ -596,7 +596,7 @@ img, video {
 }
 .bg-white {
     --tw-bg-opacity: 1;
-    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+    background-color: #f5f3ea;
 }
 .bg-opacity-50 {
     --tw-bg-opacity: 0.5;
